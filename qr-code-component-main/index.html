@@ -3,12 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit&display=swap">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <script src="https://cdn.tailwindcss.com"></script>
 
   <title>Frontend Mentor | QR code component</title>
 
+  <style>
+
+    .outfit-regular {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+  </style>
+  
 </head>
 
 <body class="min-h-screen flex justify-center items-center lg:p-28 p-16 bg-[#D6E2F0]">
@@ -18,9 +28,9 @@
     <img class="rounded-xl" src="images/image-qr-code.png" alt="Sunset in the mountains">
   </div>
   <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">  Improve your front-end skills by building projects
+    <div class="text-3xl text-center outfit-regular mb-2 text-[#1F3251]">  Improve your front-end skills by building projects
     </div>
-    <p class="text-gray-700 text-base">
+    <p class="text-center text-xl text-[#7B879D] outfit-regular pt-4 pb-6">
       Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
     </p>
   </div>
