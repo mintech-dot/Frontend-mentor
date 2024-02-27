@@ -1,34 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <!--Tailwind css CDN-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Inter font embed code-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Social links profile</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
   </style>
+
 </head>
-<body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="min-h-screen flex justify-center items-center lg:p-28 p-16 bg-[#141414]">
+  <div class="pt-8 max-w-sm w-full rounded-xl bg-[#1F1F1F] shadow-lg">
+    <img class="w-20 block mx-auto rounded-full" src="assets/images/avatar-jessica.jpeg" alt="avatar-jessica">
+    <div class="text-center pt-6">
+      <div class="text-white inter-regular  font-bold  text-3xl mb-2">Jessica Randall</div>
+      <div class="text-[#c5f82a] inter-regular  font-bold  text-lg mb-2">London, United Kingdom</div>
+      <div class="py-6 text-white inter-regular text- mb-2">  "Front-end developer and avid reader."</div>
+      <div class="flex flex-col px-8">
+        <button class="bg-[#333333]  text-white inter-regular  font-bold py-4 rounded-xl px-8 rounded mb-4">Github</button>
+        <button class="bg-[#333333] text-white inter-regular  font-bold py-4 rounded-xl px-8 rounded mb-4">Frontend Mentor</button>
+        <button class="bg-[#333333] text-white inter-regular  font-bold py-4 rounded-xl px-8 rounded mb-4">LinkedIn</button>
+        <button class="bg-[#333333] text-white inter-regular  font-bold py-4 rounded-xl px-8 rounded mb-4">Twitter</button>
+        <button class="bg-[#333333] text-white inter-regular  font-bold py-4 rounded-xl px-8 rounded mb-8 ">Instagram</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
