@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap">
+
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,15 +29,37 @@
                 background-image: url("mobile-background.jpg");
             }
         }
+
+        
+
+        .red-hat-medium{
+          font-family: "Red Hat Display", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
+        }
+        .red-hat-bold{
+          font-family: "Red Hat Display", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 700;
+          font-style: normal;
+        }
+
+        .red-hat-black{
+          font-family: "Red Hat Display", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+        }
 </style>
 
 </head>
-<body class="min-h-screen flex justify-center items-center lg:p-28 p-16">
+<body class="min-h-screen flex justify-center items-center lg:p-16 p-12">
   <div class=" max-w-sm w-full rounded-[16px] bg-white shadow-lg">
     <img class="w-full rounded-t-[16px]" src="images/illustration-hero.svg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">  Order Summary</div>
-      <p class="text-gray-700 text-base">
+    <div class="px-6 py-4 text-center">
+      <div class="red-hat-black text-3xl mb-2">  Order Summary</div>
+      <p class="text-gray-700 red-hat-medium">
         You can now listen to millions of songs, audiobooks, and podcasts on any 
         device anywhere you like!
       </p>
@@ -46,26 +70,26 @@
           <div class="flex items-center gap-4">
             <img src="images/icon-music.svg"/>
             <div class="w-fit ">
-              <h1 class="text-gray-600 font-bold">
+              <h1 class="text-gray-600 font-bold red-hat-font">
                 Annual Plan
               </h1>
               <a
-                class="text-xs text-gray-500">
+                class="text-xs red-hat-font text-gray-500">
                 $59.99/year
               </a>
             </div >
-            <div dir="rtl" class="w-fit pe-8">
-              <a href=""> Change</a>
+            <div dir="rtl" class="w-fit pe-16">
+              <a class="text-xs red-hat-font text-blue-500 underline" href=""> Change</a>
             </div>
           </div>
         </div>
     </div>
     <div class="px-6 py-4 flex justify-center items-center">
-      <button class="w-80 h-14 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <button class="w-80 h-14 red-hat-font bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
         Proceed to Payment
       </button>
     </div>
-    <h2 class="text-center py-4">  Cancel Order      </h2>
+    <h2 class="text-center font-bold red-hat-font py-4">  Cancel Order      </h2>
   </div>
 
 </body>
