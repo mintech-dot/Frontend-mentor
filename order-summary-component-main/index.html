@@ -8,30 +8,65 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+<style>
+
+        /* Default background for desktop */
+        body {
+            background-image: url("images/cover.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 768px) {
+            body {
+                /* Specific background for mobile */
+                background-image: url("mobile-background.jpg");
+            }
+        }
+</style>
+
 </head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="min-h-screen flex justify-center items-center lg:p-28 p-16">
+  <div class=" max-w-sm w-full rounded-[16px] bg-white shadow-lg">
+    <img class="w-full rounded-t-[16px]" src="images/illustration-hero.svg" alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">  Order Summary</div>
+      <p class="text-gray-700 text-base">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </p>
+    </div>
+    <div class="px-6 pt-4 pb-2">
+        <div
+          class="bg-gray-50  shadow-xl rounded-xl p-5 ">
+          <div class="flex items-center gap-4">
+            <img src="images/icon-music.svg"/>
+            <div class="w-fit ">
+              <h1 class="text-gray-600 font-bold">
+                Annual Plan
+              </h1>
+              <a
+                class="text-xs text-gray-500">
+                $59.99/year
+              </a>
+            </div >
+            <div dir="rtl" class="w-fit pe-8">
+              <a href=""> Change</a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="px-6 py-4 flex justify-center items-center">
+      <button class="w-80 h-14 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Proceed to Payment
+      </button>
+    </div>
+    <h2 class="text-center py-4">  Cancel Order      </h2>
   </div>
+
 </body>
 </html>
