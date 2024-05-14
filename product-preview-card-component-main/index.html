@@ -1,36 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
 
-  Perfume
+    <title>Frontend Mentor | Product preview card component</title>
 
-  Gabrielle Essence Eau De Parfum
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .montserrat-medium {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+      .montserrat-bold {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
 
-  $149.99
-  $169.99
+      .fraunces-bold {
+        font-family: "Fraunces", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings: "SOFT" 0, "WONK" 0;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center bg-[#F2EBE3] min-h-screen">
+    <main class="border border bg-white rounded-xl m-4 h-full w-min-sceeen">
+      <div class="">
+        <img
+          class="rounded-t-xl"
+          src="images/image-product-mobile.jpg"
+          alt=""
+        />
+      </div>
+      <div class="p-6">
+        <h1
+          class="pb-2 text-[#6C7289] uppercase montserrat-bold text-xs tracking-[.30em]"
+        >
+          Perfume
+        </h1>
 
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <h1 class="pb-4 text-[#1C232B] leading-8 fraunces-bold text-3xl">
+          Gabrielle Essence Eau De Parfum
+        </h1>
+
+        <p class="pb-5 text-[#6C7289] leading-relaxed montserrat-bold text-sm">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+
+        <div class="flex items-between gap-5 pb-3">
+          <h1 class="text-3xl text-[#3C8067] fraunces-bold">$149.99</h1>
+          <h1
+            class="my-2 text-[#7280A7] montserrat-bold text-xs line-through"
+          >
+            $169.99
+          </h1>
+        </div>
+        <button
+          class="flex items-center justify-center space-x-2 bg-[#3C8067] text-white text-sm font-black montserrat-bold  py-3 w-full rounded-lg"
+        >
+          <svg
+            class="w-4 h-4 white mr-3"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </svg>
+          Add to Cart
+        </button>
+
+        
+      </div>
+    </main>
+  </body>
 </html>
