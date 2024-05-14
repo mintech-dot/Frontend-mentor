@@ -12,12 +12,17 @@
       href="./images/favicon-32x32.png"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Product preview card component</title>
 
@@ -47,40 +52,50 @@
     </style>
   </head>
   <body class="flex items-center justify-center bg-[#F2EBE3] min-h-screen">
-    <main class="border border bg-white rounded-xl m-4 h-full w-min-sceeen">
-      <div class="">
+    <main
+      class="border border bg-white rounded-xl m-4 h-full w-min-sceeen sm:flex sm:w-[600px]"
+    >
+      <div class="sm:w-1/2">
         <img
-          class="rounded-t-xl"
+          class="rounded-l-xl hidden sm:block"
+          src="images/image-product-desktop.jpg"
+          alt=""
+        />
+
+        <img
+          class="rounded-t-xl sm:hidden"
           src="images/image-product-mobile.jpg"
           alt=""
         />
       </div>
-      <div class="p-6">
+      <div class="p-6 sm:p-8 sm:w-1/2 h-full">
         <h1
-          class="pb-2 text-[#6C7289] uppercase montserrat-bold text-xs tracking-[.30em]"
+          class="pb-2 sm:pb-3 text-[#6C7289] uppercase montserrat-bold text-xs tracking-[.30em] sm:tracking-[.45em]"
         >
           Perfume
         </h1>
 
-        <h1 class="pb-4 text-[#1C232B] leading-8 fraunces-bold text-3xl">
+        <h1
+          class="pb-4 sm:pb-5 text-[#1C232B] sm:leading-9 leading-8 fraunces-bold sm:text-4xl text-3xl"
+        >
           Gabrielle Essence Eau De Parfum
         </h1>
 
-        <p class="pb-5 text-[#6C7289] leading-relaxed montserrat-bold text-sm">
+        <p
+          class="pb-5 sm:pb-8 text-[#6C7289] leading-relaxed montserrat-bold text-sm"
+        >
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
 
-        <div class="flex items-between gap-5 pb-3">
+        <div class="flex items-between gap-5 sm:pb-6 pb-3">
           <h1 class="text-3xl text-[#3C8067] fraunces-bold">$149.99</h1>
-          <h1
-            class="my-2 text-[#6C7289] montserrat-bold text-xs line-through"
-          >
+          <h1 class="my-2 text-[#6C7289] montserrat-bold text-xs line-through">
             $169.99
           </h1>
         </div>
         <button
-          class="flex items-center justify-center space-x-2 bg-[#3C8067] text-white text-sm montserrat-bold  py-3 w-full rounded-lg"
+          class="flex items-center justify-center space-x-2 bg-[#3C8067] text-white text-sm montserrat-bold py-3 w-full rounded-lg"
         >
           <svg
             class="w-4 h-4 white mr-3"
@@ -113,8 +128,6 @@
           </svg>
           Add to Cart
         </button>
-
-        
       </div>
     </main>
   </body>
