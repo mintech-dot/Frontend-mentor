@@ -26,7 +26,7 @@ Each challenge solution is contained in its own directory within this repository
 2. Navigate to the directory of the specific challenge you want to view.
 3. Open the `index.html` file in your web browser.
 
-Alternatively, you can view the live demo of each solution by visiting the provided GitHub Pages link .
+Alternatively, you can view the live demo of each solution by visiting my [Frontend mentor profile](https://www.frontendmentor.io/profile/mintech-dot) .
 
 ## Feedback
 
@@ -38,4 +38,4 @@ If you have any questions or want to connect, you can reach me via:
 
 - Email: [maintech@protonmail.com](mailto:maintech@protonmail.com)
 - [Reddit Profile](https://www.reddit.com/user/MR_n1C0LA2/)
-- [Frontend mentor](https://www.frontendmentor.io/profile/mintech-dot)
+- [LinkedIn Profile](https://www.linkedin.com/in/sobhi-raid/)
