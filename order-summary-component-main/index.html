@@ -1,98 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap">
+    <title>Frontend Mentor | Order summary card</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<style>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        /* Default background for desktop */
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* Default background for desktop */
+      body {
+        background-image: url("images/cover.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+      }
+
+      /* Media query for mobile devices */
+      @media screen and (max-width: 768px) {
         body {
-            background-image: url("images/cover.jpg");
-            background-size: cover;
-            background-attachment: fixed;
+          /* Specific background for mobile */
+          background-image: url("images/cover-mobile.jpg");
         }
+      }
 
-        /* Media query for mobile devices */
-        @media screen and (max-width: 768px) {
-            body {
-                /* Specific background for mobile */
-                background-image: url("images/cover-mobile.jpg");
-            }
-        }
+      .red-hat-medium {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .red-hat-bold {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
 
-        
-
-        .red-hat-medium{
-          font-family: "Red Hat Display", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 500;
-          font-style: normal;
-        }
-        .red-hat-bold{
-          font-family: "Red Hat Display", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 700;
-          font-style: normal;
-        }
-
-        .red-hat-black{
-          font-family: "Red Hat Display", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: 900;
-          font-style: normal;
-        }
-</style>
-
-</head>
-<body class="min-h-screen flex justify-center items-center lg:p-8 p-6">
-  <div class=" max-w-sm w-full rounded-[16px] bg-white shadow-lg">
-    <img class="w-full rounded-t-[16px]" src="images/illustration-hero.svg" alt="Sunset in the mountains">
-    <div class="px-6 py-8 text-center">
-      <div class="red-hat-black text-[#1f2f56] text-2xl mb-2">  Order Summary</div>
-      <p class="text-[#7280a7] red-hat-medium">
-        You can now listen to millions of songs, audiobooks, and podcasts on any 
-        device anywhere you like!
-      </p>
-    </div>
-    <div class="px-8 pb-2">
-        <div
-          class="bg-[#f5f7ff] rounded-xl p-4 ">
+      .red-hat-black {
+        font-family: "Red Hat Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex justify-center items-center lg:p-8 p-6">
+    <div class="max-w-sm w-full rounded-[16px] bg-white shadow-lg">
+      <img
+        class="w-full rounded-t-[16px]"
+        src="images/illustration-hero.svg"
+        alt="Sunset in the mountains"
+      />
+      <div class="px-6 py-8 text-center">
+        <div class="red-hat-black text-[#1f2f56] text-2xl mb-2">
+          Order Summary
+        </div>
+        <p class="text-[#7280a7] red-hat-medium">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+      </div>
+      <div class="px-8 pb-2">
+        <div class="bg-[#f5f7ff] rounded-xl p-4">
           <div class="flex items-center gap-4">
-            <img src="images/icon-music.svg"/>
-            <div class="w-fit ">
-              <h1 class="text-[#1f2f56] font-bold red-hat-bold">
-                Annual Plan
-              </h1>
-              <a
-                class="text-md red-hat-medium text-[#7280a7]">
-                $59.99/year
-              </a>
-            </div >
+            <img src="images/icon-music.svg" />
+            <div class="w-fit">
+              <h1 class="text-[#1f2f56] font-bold red-hat-bold">Annual Plan</h1>
+              <a class="text-md red-hat-medium text-[#7280a7]"> $59.99/year </a>
+            </div>
             <div class="w-fit lg:px-16 sm:px-6">
-              <a class="text-md red-hat-medium text-[#3829e0] underline hover:text-[#5d51e6]" href=""> Change</a>
+              <a
+                class="text-md red-hat-medium text-[#3829e0] underline hover:text-[#5d51e6]"
+                href=""
+              >
+                Change</a
+              >
             </div>
           </div>
         </div>
+      </div>
+      <div class="px-8 pt-5 flex justify-center items-center">
+        <button
+          class="shadow-2xl red-hat-medium bg-[#3829e0] hover:bg-[#5d51e6] text-white font-bold py-4 px-4 w-full rounded-xl"
+        >
+          Proceed to Payment
+        </button>
+      </div>
+      <div class="text-center py-8">
+        <a
+          class="font-bold red-hat-medium text-md text-[#7280a7] hover:text-[#1f2f56]"
+          href=""
+        >
+          Cancel Order
+        </a>
+      </div>
     </div>
-    <div class="px-8 pt-5 flex justify-center items-center">
-      <button class="shadow-2xl red-hat-medium bg-[#3829e0] hover:bg-[#5d51e6] text-white font-bold py-4 px-4 w-full rounded-xl ">
-        Proceed to Payment
-      </button>
-    </div>
-    <div class="text-center py-8">
-      <a class="font-bold red-hat-medium text-md text-[#7280a7] hover:text-[#1f2f56]" href="">  Cancel Order      </a>
-    </div>
-  </div>
-
-</body>
+  </body>
 </html>
