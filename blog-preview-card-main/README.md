@@ -2,7 +2,7 @@
 
 ![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)
 
-# Front-end Style Guide
+## Front-end Style Guide
 
 ## Layout
 

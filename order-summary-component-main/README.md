@@ -6,7 +6,7 @@
 
 Thanks for checking out this front-end coding challenge.
 
-# Front-end Style Guide
+## Front-end Style Guide
 
 ## Layout
 
