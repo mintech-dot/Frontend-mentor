@@ -37,5 +37,3 @@ Feedback and suggestions are always welcome! If you have any comments or improve
 If you have any questions or want to connect, you can reach me via:
 
 - Email: [maintech@protonmail.com](mailto:maintech@protonmail.com)
-- [Reddit Profile](https://www.reddit.com/user/MR_n1C0LA2/)
-- [LinkedIn Profile](https://www.linkedin.com/in/sobhi-raid/)
